@@ -15,9 +15,6 @@ echo "Removing snap...This will take a while"
     sudo apt-get purge -y snapd 
     sudo apt-get purge -y gnome-software-plugin-snap 
 
-    # Clean the dirs
-    sudo rm -rf /snap /var/snap /var/lib/snapd /var/cache/snapd /usr/lib/snapd /home/$USER/snap
-
     # Prevent snap from being reinstalled 
     printf "Package: snapd\nPin: release a=*\nPin-Priority: -10" >> no-snap.pref 
     sudo mv no-snap.pref /etc/apt/preferences.d/
@@ -83,6 +80,7 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 
 # Update, clean the system and reinstall important packages
 echo "Update, clean the system and reinstall important packages"
+sudo rm -rf /snap /var/snap /var/lib/snapd /var/cache/snapd /usr/lib/snapd /home/$USER/snap
 sudo apt-get --dry-run autoremove | grep -Po 'Remv \K[^ ]+'  > ./autoremove.txt
 sed '/apport-symptoms/d' autoremove.txt > reinstall.txt
 rm autoremove.txt
