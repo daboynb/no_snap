@@ -10,7 +10,7 @@
     - Install firefox standard
     - Install flatpak 
 
-# KNow bugs
+# Know bugs
 
     - gnome software center can´t remove deb packages
     - gnome software center not show any icons 
