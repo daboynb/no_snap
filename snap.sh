@@ -27,7 +27,6 @@ sudo apt install --reinstall ca-certificates -y
 # Install "GNOME Software Center" 
 echo "echo installing gnome software"
 sudo apt install --no-install-recommends gnome-software -y
-sudo apt-get install gnome-packagekit -y
 
 # Done
 echo "Snap removed"
