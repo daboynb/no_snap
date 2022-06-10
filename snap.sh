@@ -33,7 +33,7 @@ echo "Snap removed"
 
 # Disabling telemetry
 echo "Disabling telemetry"
-sudo apt remove ubuntu-report popularity-contest apport whoopsie -y
+sudo apt remove ubuntu-report popularity-contest apport -y
 
 # Prevent telemetry from being reinstalled 
 
@@ -48,10 +48,6 @@ sudo apt remove ubuntu-report popularity-contest apport whoopsie -y
     printf "Package: apport\nPin: release a=*\nPin-Priority: -10" >> no-apport.pref 
     sudo mv no-apport.pref /etc/apt/preferences.d/
     sudo chown root:root /etc/apt/preferences.d/no-apport.pref
-
-    printf "Package: whoopsie\nPin: release a=*\nPin-Priority: -10" >> no-whoopsie.pref 
-    sudo mv no-whoopsie.pref /etc/apt/preferences.d/
-    sudo chown root:root /etc/apt/preferences.d/no-whoopsie.pref
 
 # Checking for unmet dependencies 
 echo "Checking for unmet dependencies"
