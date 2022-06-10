@@ -9,3 +9,8 @@
     - Prevent firefox snap from being reinstalled 
     - Install firefox standard
     - Install flatpak 
+
+# KNow bugs
+
+    - gnome software center can´t remove deb packages
+    - gnome software center not show any icons 
