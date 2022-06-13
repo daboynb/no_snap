@@ -65,7 +65,7 @@ sudo add-apt-repository ppa:mozillateam/ppa -y
 sudo apt update
 sudo apt install firefox -y
 
-# Install flatpak 
+# Install synaptic 
 echo "Installing synaptic"
 sudo apt install synaptic -y
 
