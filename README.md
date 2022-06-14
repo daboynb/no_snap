@@ -2,26 +2,15 @@
 
 # Remove all snap stuff on ubuntu 22.04
 
-1) snap_gnome_software_center.sh
-
-    - Remove snaps
-    - Install GNOME Software Center
-    - Disable telemetry
-    - Prevent telemetry packages from being reinstalled 
-    - Prevent firefox snap from being reinstalled 
-    - Install firefox standard
-    - Install flatpak 
-
-2) no_snap_synaptic.sh
-      
-    - Remove snaps
-    - Install synaptic
-    - Disable telemetry
-    - Prevent telemetry packages from being reinstalled 
-    - Prevent firefox snap from being reinstalled 
-    - Install firefox standard
-
-
+| no_snap_synaptic.sh             | no_snap_gnome_software_center.sh   |
+| ------------------------------- | ---------------------------------- |
+| Remove snaps                    | Remove snaps                       |
+| Install synaptic                | Install gnome_software_center      | 
+| Disable telemetry               | Disable telemetry                  |     
+| Prevent firefox snap reinstall  | Prevent firefox snap reinstall     |
+| Prevent telemetry reinstall     | Prevent telemetry reinstall        |
+| Install firefox standard        | Install firefox standard           |
+| No flatpak                      | Install flatpak                    | 
 
 # Know bugs
 
