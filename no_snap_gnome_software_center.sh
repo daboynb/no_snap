@@ -5,6 +5,7 @@
 
 # Start
 sudo apt update
+sudo apt-get install dbus-x11
 
 echo "Removing snap...This will take a while"
     
