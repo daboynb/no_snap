@@ -74,7 +74,7 @@ sudo apt install synaptic -y
 echo "Update, clean the system and reinstall important packages"
 sudo rm -R "/snap" "/var/snap" "/var/lib/snapd" "/var/cache/snapd" "/usr/lib/snapd" "/home/$USER/snap"
 sudo apt-get --dry-run autoremove | grep -Po 'Remv \K[^ ]+'  > ./autoremove.txt
-sed '/apport-symptoms/d' autoremove.txt > reinstall.txt
+sed '/apport*/d' autoremove.txt > reinstall.txt
 rm autoremove.txt
 sudo apt autoremove --purge -y
 xargs -a reinstall.txt sudo apt-get install -y
