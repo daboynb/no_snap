@@ -5,7 +5,7 @@
 
 # Start
 sudo apt update
-sudo apt-get install dbus-x11 -y
+sudo apt install dbus-x11 -y
 
 echo "Removing snap...This will take a while"
     
@@ -13,8 +13,8 @@ echo "Removing snap...This will take a while"
     sudo systemctl stop snapd && sudo systemctl disable snapd
 
     # Uninstall
-    sudo apt-get purge -y snapd 
-    sudo apt-get purge -y gnome-software-plugin-snap 
+    sudo apt purge -y snapd 
+    sudo apt purge -y gnome-software-plugin-snap 
 
     # Prevent snap from being reinstalled 
     printf "Package: snapd\nPin: release a=*\nPin-Priority: -10" >> no-snap.pref 
@@ -79,11 +79,11 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 echo "Update, clean the system and reinstall important packages"
 rm -rf ~/snap
 sudo rm -rf /snap /var/snap /var/lib/snapd /var/cache/snapd /usr/lib/snapd
-sudo apt-get --dry-run autoremove | grep -Po 'Remv \K[^ ]+'  > ./autoremove.txt
+sudo apt --dry-run autoremove | grep -Po 'Remv \K[^ ]+'  > ./autoremove.txt
 sed '/apport*/d' autoremove.txt > reinstall.txt
 rm autoremove.txt
 sudo apt autoremove --purge -y
-xargs -a reinstall.txt sudo apt-get install -y
+xargs -a reinstall.txt sudo apt install -y
 rm reinstall.txt
 sudo apt upgrade -y 
 
