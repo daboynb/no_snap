@@ -72,7 +72,8 @@ sudo apt install synaptic -y
 
 # Update, clean the system and reinstall important packages
 echo "Update, clean the system and reinstall important packages"
-sudo rm -R "/snap" "/var/snap" "/var/lib/snapd" "/var/cache/snapd" "/usr/lib/snapd" "/home/$USER/snap"
+rm -rf ~/snap
+sudo rm -rf /snap /var/snap /var/lib/snapd /var/cache/snapd /usr/lib/snapd
 sudo apt --dry-run autoremove | grep -Po 'Remv \K[^ ]+'  > ./autoremove.txt
 sed '/apport*/d' autoremove.txt > reinstall.txt
 rm autoremove.txt
