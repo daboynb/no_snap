@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Ask for sudo privileges
-[ "$UID" -eq 0 ] || exec sudo "$0" "$@"
-
 # Start
 sudo apt update
 sudo apt install dbus-x11 -y
