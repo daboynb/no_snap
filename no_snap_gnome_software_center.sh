@@ -82,6 +82,6 @@ rm autoremove.txt
 sudo apt autoremove --purge -y
 xargs -a reinstall.txt sudo apt install -y
 rm reinstall.txt
-sudo apt upgrade -y 
+sudo apt upgrade -y --allow-downgrades
 
 echo "TO APPLY ALL THE CHANGES PLEASE REBOOT"
