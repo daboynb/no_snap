@@ -98,7 +98,7 @@ Choose an option:  "
            sudo apt install synaptic -y
         ;;
     3)
-           echo "Installing  flatpak and synaptic"
+           echo "Installing flatpak and synaptic"
            sudo apt install flatpak -y
            sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
            sudo apt install synaptic -y
@@ -108,14 +108,14 @@ Choose an option:  "
            sudo apt install flatpak -y
            sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
            sudo apt install --no-install-recommends gnome-software -y
-           sudo apt install flatpak gnome-software-plugin-flatpak -y
+           sudo apt install gnome-software-plugin-flatpak -y
         ;;
     5)
            echo "Install flatpak and plasma-discover"
            sudo apt install flatpak -y
            sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
            sudo apt install --no-install-recommends plasma-discover -y
-           sudo apt flatpak plasma-discover-backend-flatpak -y
+           sudo apt install plasma-discover-backend-flatpak -y
         ;;
     0)      
             echo "Bye bye."
