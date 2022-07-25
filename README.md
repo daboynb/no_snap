@@ -11,6 +11,13 @@ After snapd got removed you can chose to :
    - Install flatpak and plasma-discover plus integraion
    - If you don't want install anything press 0 to exit
 
+
+# Run
+
+    - wget https://raw.githubusercontent.com/daboynb/no_snap/main/no_snap.sh && chmod +x no_snap.sh && ./no_snap.sh
+
+
+
 # Know bugs
 
     - gnome software center can´t remove deb packages 
