@@ -5,7 +5,7 @@
 | synaptic.sh                     | software_center.sh                 | plasma_discover.sh             |
 | ------------------------------- | ---------------------------------- | ------------------------------ |
 | Remove snaps                    | Remove snaps                       | Remove snaps                   |
-| Install synaptic                | Install gnome_software_center      | Install kde_software_center  |
+| Install synaptic                | Install gnome_software_center      | Install kde_software_center    |
 | Disable telemetry               | Disable telemetry                  | Disable telemetry              |
 | Prevent firefox snap reinstall  | Prevent firefox snap reinstall     | Prevent firefox snap reinstall |
 | Prevent telemetry reinstall     | Prevent telemetry reinstall        | Prevent telemetry reinstall    |
