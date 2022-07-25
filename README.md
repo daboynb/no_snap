@@ -14,7 +14,7 @@ After snapd got removed you can chose to :
 
 # Run
 
-    - wget https://raw.githubusercontent.com/daboynb/no_snap/main/no_snap.sh && chmod +x no_snap.sh && ./no_snap.sh
+     wget https://raw.githubusercontent.com/daboynb/no_snap/main/no_snap.sh && chmod +x no_snap.sh && ./no_snap.sh
 
 
 
