@@ -17,4 +17,4 @@
     - gnome software center can´t remove deb packages 
         (https://bugs.launchpad.net/ubuntu/jammy/+source/gnome-software)
         
-    - gnome software center not show any icons 
+    - gnome software center not show any icons of deb packages, work for flatpak ones
